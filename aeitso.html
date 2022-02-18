@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="aeitso.css" type="text/css" />
-    <link rel="stylesheet" href="button.css" type="text/css" />
-    <link rel="stylesheet" href="loader.css" type="text/css" />
+    <title>AEITSO</title>
+    <link rel="stylesheet" href="{% static 'aeitso.css' %}" type="text/css" />
+    <link rel="stylesheet" href="{% static 'button.css' %}" type="text/css" />
+    <link rel="stylesheet" href="{% static 'loader.css' %}" type="text/css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -63,7 +63,7 @@
         >
       </div>
       <div class="image-container">
-        <img src="1234.png" />
+        <img src="{% static '1234.png' %}" />
       </div>
       <div id="container">
         <h1 class="h1" style="opacity: 1">
@@ -85,7 +85,7 @@
 "background"
 ></canvas>
     <script
-      src="royal_loader.js"
+      src="{% static 'royal_loader.js' %}"
       type="text/javascript"
       charset="utf-8"
     ></script>
