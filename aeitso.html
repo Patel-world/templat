@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="aeitso.css" type="text/css" />
+    <link rel="stylesheet" href="button.css" type="text/css" />
+    <link rel="stylesheet" href="loader.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Rowdies&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+  </head>
+  <body class="royal_loader">
+    <nav>
+      <div>AEITSO</div>
+      <div>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Skills</a>
+        <a href="#">Experiences</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+      </div>
+      <div class="hamburger">
+        <div class="hamburger__container">
+          <div class="hamburger__inner"></div>
+          <div class="hamburger__hidden"></div>
+        </div>
+      </div>
+    </nav>
+    <section>
+      <div class="hero-socials__wrapper">
+        <a
+          href="https://www.instagram.com/patel_insta01/"
+          target="_blank"
+          class="hero-socials__item"
+          >Instagram</a
+        ><a
+          href="https://www.facebook.com/pankaj.kumarverma.1238"
+          target="_blank"
+          class="hero-socials__item"
+          >Facebook</a
+        ><a
+          href="https://www.linkedin.com/in/pankaj-kumar-verma-428a8a202"
+          target="_blank"
+          class="hero-socials__item"
+          >LinkedIn</a
+        >
+      </div>
+      <div class="image-container">
+        <img src="1234.png" />
+      </div>
+      <div id="container">
+        <h1 class="h1" style="opacity: 1">
+          <font style="vertical-align: inherit"
+            ><font style="vertical-align: inherit"
+              ><name>Hi, I am</name> <fame>Patel</fame>
+            </font></font
+          >
+        </h1>
+        <div id="flip">
+          <div><div>Ui/ux designer</div></div>
+          <div><div>Web developer</div></div>
+        </div>
+
+        <button class="btn fourth">let's talk</button>
+      </div>
+    </section>
+    <canvas class=
+"background"
+></canvas>
+    <script
+      src="royal_loader.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+
+    <script>
+      var images = {
+        slider1:
+          "http://www.aetherthemes.com/demo/visia/images/slider/slide1.jpg",
+        slider2:
+          "http://www.aetherthemes.com/demo/visia/images/slider/slide1.jpg",
+        slider3:
+          "http://www.aetherthemes.com/demo/visia/images/slider/slide1.jpg",
+        parallax1:
+          "http://www.aetherthemes.com/demo/visia/images/services-red.jpg",
+        parallax2: "http://www.aetherthemes.com/demo/visia/images/clients.jpg",
+        "About Us": "http://www.aetherthemes.com/demo/visia/images/about.jpg",
+      };
+      Royal_Preloader.config({
+        mode: "number",
+        images: images,
+        timeout: 50,
+        showInfo: false,
+        background: ["#ffffff"],
+      });
+
+      document.querySelector(".hamburger").addEventListener("click", (e) => {
+        e.currentTarget.classList.toggle("is-active");
+      });
+
+      Particles.init({
+        // normal options
+        selector: ".background",
+        maxParticles: 50,
+        connectParticles: true,
+        // options for breakpoints
+        responsive: [
+          {
+            breakpoint: 768,
+            options: {
+              maxParticles: 200,
+              color: "#48F2E3",
+              connectParticles: true,
+            },
+          },
+          {
+            breakpoint: 425,
+            options: {
+              maxParticles: 100,
+              connectParticles: true,
+            },
+          },
+          {
+            breakpoint: 320,
+            options: {
+              maxParticles: 0,
+
+              // disables particles.js
+            },
+          },
+        ],
+      });
+    </script>
+  </body>
+</html>
