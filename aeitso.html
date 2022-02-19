@@ -25,14 +25,54 @@
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
-  </head>
+  
+<style>
+    mark {
+    width: fit-content;
+    padding: 0.2rem;
+}
+    section.s2 {
+    position: relative;
+    display: flex;
+}
+    img.i1 {
+    max-width: 274px;
+}
+    h2.frame {
+        font-family: 'Almarena Display', Georgia, sans-serif;
+    margin-inline-start: 2rem;
+}
+h1.front {
+    font-family: 'Almarena Display', Georgia, sans-serif;
+    font-size: 1rem;
+    color: black;
+}
+.front {
+    display: inline-block;
+    margin: 2rem;
+}
+div#Skills {
+    width: fit-content;
+    display: inline-grid;
+    margin-inline-start: 2rem;
+}
+
+    .skills {
+    top: 5rem;
+    margin-left: 5rem;
+    width: -webkit-fill-available;
+    background-color: #d4cdc5;
+    position: absolute;
+}
+</style>
+</head>
   <body class="royal_loader">
     <nav>
       <div>AEITSO</div>
       <div>
         <a href="#">Home</a>
         <a href="#">About</a>
-        <a href="#">Skills</a>
+        <a href="#s">Skills</a>
         <a href="#">Experiences</a>
         <a href="#">Blog</a>
         <a href="#">Contact</a>
@@ -44,7 +84,7 @@
         </div>
       </div>
     </nav>
-    <section>
+    <section class="s1">
       <div class="hero-socials__wrapper">
         <a
           href="https://www.instagram.com/patel_insta01/"
@@ -64,7 +104,7 @@
         >
       </div>
       <div class="image-container">
-        <img src="{% static '1234.png' %}" />
+        <img class="i1" src="{% static '1234.png' %}" />
       </div>
       <div id="container">
         <h1 class="h1" style="opacity: 1">
@@ -85,6 +125,72 @@
     <canvas class=
 "background"
 ></canvas>
+<section class="s2">
+    <div class="skills">
+        <div class="front">
+            <div><h1 class="front">
+                Skills
+            </h1>
+            <h2 class="frame">Frameworks</h2></div>
+            <div id="Skills">
+                <mark>Frontend</mark>
+                <ul>
+                    <li>React</li>
+                    
+                </ul>
+                <mark>Backend</mark>
+                <ul>
+                    <li>Django</li>
+                    <li>Next</li>
+                    <li>Express</li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="front">
+            <div><h1 class="front">
+                Ability
+            </h1>
+            <h2 class="frame">To deal with</h2></div>
+            <div id="Skills">
+                <mark>various challenges</mark>
+                <ul>
+                    <li>Having so much confidence in HTML, CSS & JAVASCRIPT.</li>
+                    <li>CAN CREATE A responsive website.</li>
+                    <li>I can transform a Ui/Ux design into a web page</li>
+                    <li> I'm Ui/Ux designer at beginner level.</li> 
+                    <li>Skilled in using Linux</li> 
+                    <li>Can work on Virtual Private Server</li>
+                    <li>Can Deploy a Website on Server and Bring SEO to it.</li>
+                    <li>Having Teaching Skills</li>
+                    <li>I can Train people what I have learned<br> so far</li>
+                </ul>
+            </div>
+        </div>
+        <div class="front">
+            <div><h1 class="front">
+                Currently Learning
+            </h1>
+            <h2 class="frame">Some emerging Technology</h2></div>
+            <div id="Skills">
+                <mark>Web3.0</mark>
+                
+                <ul>
+                    <li>Django Rest Framework</li>
+                    <li>Webrtc</li>
+                    <li>Machine Learning</li>
+                    <li>Data Visualisation</li> 
+                    <li>three.js</li> 
+                    <li>Automation</li>
+                    <li>Content Writing</li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+</section><div id="s"></div>
+
     <script
       src="{% static 'royal_loader.js' %}"
       type="text/javascript"
@@ -126,7 +232,7 @@
           {
             breakpoint: 768,
             options: {
-              maxParticles: 200,
+              maxParticles: 50,
               color: "#48F2E3",
               connectParticles: true,
             },
@@ -134,7 +240,7 @@
           {
             breakpoint: 425,
             options: {
-              maxParticles: 100,
+              maxParticles: 50,
               connectParticles: true,
             },
           },
