@@ -32,6 +32,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
   
 <style>
+  body{
+    background: #141E30;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
   mark {
     font-family: Montserrat;
     width: fit-content;
@@ -352,6 +357,14 @@ div#Skills {
           },
         ],
       });
+    </script>
+    <script>
+      document.body.style.zoom = 1.1;
+
+      var scale = 'scale(1)';
+document.body.style.webkitTransform =  scale;    // Chrome, Opera, Safari
+ document.body.style.msTransform =   scale;       // IE 9
+ document.body.style.transform = scale;     // General
     </script>
   </body>
 </html>
